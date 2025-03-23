@@ -105,6 +105,6 @@ jobs:
         name: Release ${{ env.version }}
         draft: false
         prerelease: false
-        files: artifacts/**
+        files: build/**
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
