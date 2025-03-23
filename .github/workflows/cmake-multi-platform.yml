@@ -78,11 +78,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+  
     - name: Download build artifacts
       uses: actions/download-artifact@v4
       with:
         path: artifacts
-
+  
     - name: Create release tag
       id: create_tag
       run: |
@@ -91,7 +94,7 @@ jobs:
         echo "Creating release tag $VERSION"
         git tag $VERSION
         git push origin $VERSION
-
+  
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v2
       with:
