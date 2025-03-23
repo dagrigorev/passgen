@@ -15,14 +15,14 @@ A C++ utility that generates human-readable, memorable passwords while avoiding 
 ## Build Instructions
 
 ### Prerequisites
-- C++17 compatible compiler
+- C++20 compatible compiler
 - CMake (3.10+)
 - Make
 
 ### Building
 ```bash
 mkdir build && cd build
-cmake -DCMAKE_CXX_STANDARD=17 ..
+cmake -DCMAKE_CXX_STANDARD=20 ..
 make
 ```
 
