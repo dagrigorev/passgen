@@ -2,6 +2,8 @@
 
 A C++ utility that generates human-readable, memorable passwords while avoiding dictionary words. Creates secure passwords using pronounceable syllables with configurable complexity options.
 
+[![CMake on multiple platforms](https://github.com/dagrigorev/passgen/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/dagrigorev/passgen/actions/workflows/cmake-multi-platform.yml)
+
 ## Features
 
 - Generates pronounceable password bases
