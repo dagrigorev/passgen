@@ -92,6 +92,7 @@ string generate_password(const pass_gen_config& config) {
     //random_shuffle(insertions.begin(), insertions.end());
     random_device rd;
     mt19937 g(rd());
+
     shuffle(insertions.begin(), insertions.end(), g);
 
     string password = base;
@@ -107,8 +108,9 @@ int main(int argc, char* argv[]) {
     try {
         srand(time(nullptr));
         pass_gen_config config = parse_arguments(argc, argv);
-
-        cout << generate_password(config) << endl;
+        string password = generate_password(config);
+        
+        cout << password << endl;
     }
     catch (const exception& e) {
         cerr << "Error: " << e.what() << "\n\n";
