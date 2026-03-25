@@ -1,14 +1,41 @@
-CMakeLists.txt.user
+# Build directories
+build/
+out/
+_deps/
+
+# CMake generated files
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
+CMakeFiles/
+CMakeScripts/
+CMakeLists.txt.user
+CMakeUserPresets.json
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
-_deps
-CMakeUserPresets.json
-out
-.vs
+Testing/
+Makefile
+
+# Binaries and object files
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# MSVC / Visual Studio
+.vs/
+*.vcxproj.user
+*.VC.db
+*.VC.opendb
+*.sln.docstates
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
